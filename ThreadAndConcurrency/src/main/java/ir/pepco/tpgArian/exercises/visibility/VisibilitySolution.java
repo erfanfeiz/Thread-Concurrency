@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises;
+package ir.pepco.tpgArian.exercises.visibility;
 
 public class VisibilitySolution {
     private static volatile boolean ready = false;   // Try making this volatile

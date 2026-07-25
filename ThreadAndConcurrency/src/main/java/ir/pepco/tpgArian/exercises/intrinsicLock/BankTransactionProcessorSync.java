@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises;
+package ir.pepco.tpgArian.exercises.intrinsicLock;
 
 public class BankTransactionProcessorSync {
     private final Object lock = new Object();
