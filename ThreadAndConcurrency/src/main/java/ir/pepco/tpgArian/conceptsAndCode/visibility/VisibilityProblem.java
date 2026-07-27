@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises.visibility;
+package ir.pepco.tpgArian.conceptsAndCode.visibility;
 
 public class VisibilityProblem {
     private static boolean ready = false;   // Try making this volatile

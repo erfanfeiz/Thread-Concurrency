@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises.intrinsicLock;
+package ir.pepco.tpgArian.conceptsAndCode.intrinsicLock;
 
 public class BankTransactionProcessorSync {
     private final Object lock = new Object();
@@ -21,7 +21,7 @@ public class BankTransactionProcessorSync {
         thread1.join();
         thread2.join();
         thread3.join();
-        System.out.println("The balance is " + processor.balance);
+        System.out.println("The balance is " + processor.getBalance());
     }
 
     private void withdraw(int amount) {

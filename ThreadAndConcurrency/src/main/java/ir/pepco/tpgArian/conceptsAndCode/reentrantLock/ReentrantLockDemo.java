@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises.reentrantLock;
+package ir.pepco.tpgArian.conceptsAndCode.reentrantLock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises.raceCondition;
+package ir.pepco.tpgArian.conceptsAndCode.raceCondition;
 
 public class CounterRCSolution {
     private static int counter = 0;

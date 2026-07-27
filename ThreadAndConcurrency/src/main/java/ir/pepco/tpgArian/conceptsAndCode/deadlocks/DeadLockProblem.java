@@ -1,6 +1,6 @@
-package ir.pepco.tpgArian.exercises.deadlocks;
+package ir.pepco.tpgArian.conceptsAndCode.deadlocks;
 
-public class DeadLockSolution {
+public class DeadLockProblem {
     private static Object lockA = new Object();
     private static Object lockB = new Object();
 
@@ -20,17 +20,16 @@ public class DeadLockSolution {
 
         }, "Thread-1");
 
-
         Thread t2 = new Thread(() -> {
-            synchronized (lockA) {
-                System.out.println("Thread-2 locked A");
+            synchronized (lockB) {
+                System.out.println("Thread-2 locked B");
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                 }
                 System.out.println("Thread-2: Trying to lock A...");
-                synchronized (lockB) {
-                    System.out.println("Thread-2 locked B");
+                synchronized (lockA) {
+                    System.out.println("Thread-2 locked A");
                 }
             }
         }, "Thread-2");

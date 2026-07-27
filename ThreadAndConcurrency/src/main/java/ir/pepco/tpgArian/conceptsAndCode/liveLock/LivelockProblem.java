@@ -1,4 +1,4 @@
-package ir.pepco.tpgArian.exercises.liveLock;
+package ir.pepco.tpgArian.conceptsAndCode.liveLock;
 
 public class LivelockProblem {
     static class Person {
