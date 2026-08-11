@@ -63,5 +63,6 @@ public class CallableDemo {
             System.out.println(e.getMessage());
         }
         System.out.println("Result : " + result);
+        executor.shutdown();
     }
 }
